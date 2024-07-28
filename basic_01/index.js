@@ -234,25 +234,25 @@
 
 //  StopWatch
 
-function stopWatch() {
-    this.duration=0;
-    let startTime = null;
+// function stopWatch() {
+//     this.duration=0;
+//     let startTime = null;
 
-    this.start = function() {
-        const now = new Date();
-        const seconds = now.getSeconds();
-        this.duration=0;
-        startTime=seconds;
-    }
-    this.Stop = function() {
-        const now = new Date();
-        const seconds = now.getSeconds();
-        this.duration= seconds - startTime;
-    }
+//     this.start = function() {
+//         const now = new Date();
+//         const seconds = now.getSeconds();
+//         this.duration=0;
+//         startTime=seconds;
+//     }
+//     this.Stop = function() {
+//         const now = new Date();
+//         const seconds = now.getSeconds();
+//         this.duration= seconds - startTime;
+//     }
 
-}
+// }
 
-let sw=new  stopWatch();
+// let sw=new  stopWatch();
 
 // function StopWatch() {
 //     this.duration = 0;
@@ -285,3 +285,44 @@ let sw=new  stopWatch();
 // }
 
 // let sw = new StopWatch();
+
+
+// prototypes
+
+// function Circle(radius) {
+//     this.radius = radius;
+//     this.draw = function() {
+//         console.log("draw");
+//     }
+// }
+
+// const circle = new Circle(1);
+
+// Circle.prototype.toString = function() {
+//     return "Circle with radius " + this.radius;
+// }
+
+// console.log(circle.toString());
+
+// // adding properties to prototype
+
+// Circle.prototype.toString = function() {
+//     return "Circle with radius " + this.radius;
+// }
+
+// Circle.prototype.location = { x: 1, y: 1 };
+
+// console.log(circle.location);
+
+
+//  Js Mappping
+let numbers = [1, 2, 3, 4, 5];
+
+console.log(numbers.map((number, index) =>  {(number * 2)
+    console.log(index, number);
+    return number * 2;
+}
+ ));
+
+
+console.log(numbers);
